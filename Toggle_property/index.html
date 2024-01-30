@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        *{
+            background-color: white;
+        }
+        div{
+            display: flex;
+            
+        }
+        i{
+            justify-content: center;
+            
+        }
+    </style>
+</head>
+<body>
+    <h3>How to you Toggle</h3>
+    <div>
+        <i id="like_dislike"onClick="hero()"style = "font-size:40px"class="fa-solid fa-thumbs-down"></i>
+
+    </div>
+    <script>
+        const hero = ()=>{
+           const like_dislike = document.getElementById("like_dislike");
+           like_dislike.classList.toggle("fa-thumbs-up");
+        }
+    </script>
+</body>
+</html>
